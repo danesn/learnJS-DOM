@@ -16,20 +16,14 @@ button.addEventListener('click', function() {
 })
 
 // take the tag range input into variabel
-var rangeInputR = document.querySelector('#r');
-var rangeInputG = document.querySelector('#g');
-var rangeInputB = document.querySelector('#b');
-var rangeInputA = document.querySelector('#a');
+var rangeInput = document.querySelectorAll('.card input');
 // add event
-rangeInputR.addEventListener('input', function() {
-    document.body.style.backgroundColor = 'rgb('+rangeInputR.value+','+rangeInputG.value+','+rangeInputB.value+','+rangeInputA.value+'%)';
-})
-rangeInputG.addEventListener('input', function() {
-    document.body.style.backgroundColor = 'rgb('+rangeInputR.value+','+rangeInputG.value+','+rangeInputB.value+','+rangeInputA.value+'%)';
-})
-rangeInputB.addEventListener('input', function() {
-    document.body.style.backgroundColor = 'rgb('+rangeInputR.value+','+rangeInputG.value+','+rangeInputB.value+','+rangeInputA.value+'%)';
-})
-rangeInputA.addEventListener('input', function() {
-    document.body.style.backgroundColor = 'rgb('+rangeInputR.value+','+rangeInputG.value+','+rangeInputB.value+','+rangeInputA.value+'%)';
+rangeInput.forEach(function(range) {
+    range.addEventListener('input', function() {
+        var rangeInputR = document.querySelector('#r');
+        var rangeInputG = document.querySelector('#g');
+        var rangeInputB = document.querySelector('#b');
+        var rangeInputA = document.querySelector('#a');
+        document.body.style.backgroundColor = 'rgb('+rangeInputR.value+','+rangeInputG.value+','+rangeInputB.value+','+rangeInputA.value+'%)';
+    })
 })
