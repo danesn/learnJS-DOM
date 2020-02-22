@@ -1,0 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/* main */
+
+body {
+    font-family: Roboto;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.card span {
+    display: block;
+}
+
+.container .main .card {
+    
+    -webkit-box-shadow: 0px 10px 19px -6px rgba(0,0,0,0.32);
+    -moz-box-shadow: 0px 10px 19px -6px rgba(0,0,0,0.32);
+    box-shadow: 0px 10px 19px -6px rgba(0,0,0,0.32);
+    border-radius: 10px;
+    line-height: 100px;
+    background-color: white;
+    margin: auto;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.container .main .card:hover {
+
+    -webkit-box-shadow: 0px 19px 19px -6px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 19px 19px -6px rgba(0,0,0,0.1);
+    box-shadow: 0px 19px 19px -6px rgba(0,0,0,0.1);
+}
+
+.container .main .card:active {
+
+    -webkit-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.32);
+    -moz-box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.32);
+    box-shadow: inset 0px 0px 19px 1px rgba(0,0,0,0.32);
+}
+
+.addition {
+    margin-top: 50px;
+}
+
+.button {
+    -webkit-box-shadow: 0px 0px 0px 5px rgba(145,71,255,1);
+    -moz-box-shadow: 0px 0px 0px 5px rgba(145,71,255,1);
+    box-shadow: 0px 0px 0px 5px rgba(145,71,255,1);
+    font-size: 20px;
+    border-radius: 100px;
+    display: inline-block;
+    line-height: 80px;
+    width: 200px;
+    height: 80px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.button:hover {
+    box-shadow: 0px 0px 0px 5px rgba(145,71,255,1), 0px 0px 0px 8px rgba(203,105,255,1);
+}
+
+.button:active {
+    box-shadow: 0px 0px 0px 5px rgba(145,71,255,1), inset 0px 0px 10px 1px rgba(0,0,0,0.32);
+}
+
