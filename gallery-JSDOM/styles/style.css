@@ -1,0 +1,88 @@
+/* main */
+
+cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #eaeaea;
+    font-family: Montserrat;
+}
+
+.judul {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.frame {
+    position: relative;
+    
+}
+
+.jumbo {
+    border-radius: 5px;
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.container-black {
+    
+    padding: 20px;
+    top: 540px;
+    left: 2px;
+    z-index: 9999;
+    position: absolute;
+    width: 796px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+.sub-judul {
+    color: white;
+}
+
+.thumbnail {
+    margin-top: 20px;
+}
+
+.thumb {
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 200px;
+    float: left;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.thumb:hover {
+    opacity: 0.4;
+}
+
+.container {  
+    padding: 20px;
+    width: 800px;
+    background-color: white;
+    margin: auto;
+}
